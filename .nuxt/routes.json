@@ -2,13 +2,15 @@
   {
     "name": "ficha",
     "path": "/ficha",
-    "component": "C:\\\\Users\\\\Eduardo Rojas\\\\Desktop\\\\Projetos\\\\browinfo\\\\pages\\\\ficha.vue",
-    "chunkName": "pages/ficha"
+    "component": "C:\\\\Users\\\\Eduardo Rojas\\\\Desktop\\\\Projetos\\\\browsinfo\\\\pages\\\\ficha.vue",
+    "chunkName": "pages/ficha",
+    "_name": "_02e82340"
   },
   {
     "name": "index",
     "path": "/",
-    "component": "C:\\\\Users\\\\Eduardo Rojas\\\\Desktop\\\\Projetos\\\\browinfo\\\\pages\\\\index.vue",
-    "chunkName": "pages/index"
+    "component": "C:\\\\Users\\\\Eduardo Rojas\\\\Desktop\\\\Projetos\\\\browsinfo\\\\pages\\\\index.vue",
+    "chunkName": "pages/index",
+    "_name": "_186a2c8e"
   }
 ]

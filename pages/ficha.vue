@@ -130,6 +130,8 @@
 </template>
 <script>
 import "bootstrap/dist/css/bootstrap.css";
+import macaddress from "../node_modules/macaddress/index"
+// var macaddress = require('macaddress');
 export default {
   name: "ficha",
     data(){
@@ -139,7 +141,8 @@ export default {
             lati: null,
             long: null,
             dadosNavegador : {},
-            dadosUrl: {}
+            dadosUrl: {},
+            x: macaddress,
         }
     },
     methods:{
@@ -176,10 +179,18 @@ export default {
             this.DominioName = window.location.hostname,
             this.fileNamePage = window.location.pathname
             this.protocolo = window.location.protocol
+        },
+
+        getMacAdress(){
+            if(process.server) {return;}
+            console.log(this.x)
         }
+
+
     },
 
     created(){
+        this.getMacAdress()
         this.getInfo()
         this.getLocation()
         this.getInfoUrl()

@@ -12,9 +12,69 @@
     </div>
 
     <script>
-        // pagina de testes...
-        const janela = window
-        console.log(janela)
+        /*
+            objeto Window
+            window
+                navigator
+                frames[]array
+                location
+                history
+                document
+                screen
+            end object
+        */
+
+        const urlAPI = "https://api.ipify.org/?format=json"
+        var resposta = null
+
+        resposta = fetch(urlAPI).then(r =>{
+            r.json().then(
+                data=>{
+                    console.log(data.ip)
+                }
+            );
+        })
+
+
+
+        const browserInfo = {
+            obWindow: window,
+            navegador: window.navigator,
+            framess: window.frames,
+            localizacao: window.location,
+            historico: window.history,
+            documento: window.document,
+            tela: window.screen
+        }
+
+        const listInfo = [
+            {item: "conexaco", descricao: "wifi"}
+        ]
+
+
+        function criarArray(...itens){
+            console.log(itens)
+        }
+
+        
+
+        criarArray(
+            { item: "conexaco", descricao: "wifi" }, 
+            { item: "nomeBrowser", descricao: "Google Chrome" }, 
+            { item: "Sistema Operacional", descricao: "Windows" }
+        )
+
+
+        listInfo.push(browserInfo.navegador.connection)
+        listInfo.push(browserInfo.navegador.webdriver)
+        listInfo.push(browserInfo.navegador.geolocation)
+        listInfo.push(browserInfo.navegador.appCodeName)
+        listInfo.push(browserInfo.navegador.appVersion)
+        listInfo.push(browserInfo.navegador.userAgent)
+        listInfo.push(browserInfo.navegador.vendor)
+        listInfo.push(browserInfo.navegador)
+        console.log(listInfo)
+
     </script>
 
 
