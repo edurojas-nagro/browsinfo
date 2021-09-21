@@ -1,2 +1,2 @@
 # browsinfo
-App browsinfo - get information browser
+App browsinfo - Aplicação de informações do browser
