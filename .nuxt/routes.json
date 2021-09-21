@@ -1,0 +1,14 @@
+[
+  {
+    "name": "ficha",
+    "path": "/ficha",
+    "component": "C:\\\\Users\\\\Eduardo Rojas\\\\Desktop\\\\Projetos\\\\browinfo\\\\pages\\\\ficha.vue",
+    "chunkName": "pages/ficha"
+  },
+  {
+    "name": "index",
+    "path": "/",
+    "component": "C:\\\\Users\\\\Eduardo Rojas\\\\Desktop\\\\Projetos\\\\browinfo\\\\pages\\\\index.vue",
+    "chunkName": "pages/index"
+  }
+]
