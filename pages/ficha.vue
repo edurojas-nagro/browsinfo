@@ -1,6 +1,6 @@
 <template>
     <div class="containerr" id="teste">
-         <div class="jumbotron bg-light p-4" style="border-radius: 15px;">
+        <div class="jumbotron bg-light p-4" style="border-radius: 15px;">
             <h1 class="display-5">Dados do Browser</h1>
             <div class="row">
                 <div class="col-md-12">
@@ -130,7 +130,7 @@
 </template>
 <script>
 import "bootstrap/dist/css/bootstrap.css";
-import macaddress from "../node_modules/macaddress/index"
+// import macaddress from "../node_modules/macaddress/index"
 // var macaddress = require('macaddress');
 export default {
   name: "ficha",
@@ -142,7 +142,6 @@ export default {
             long: null,
             dadosNavegador : {},
             dadosUrl: {},
-            x: macaddress,
         }
     },
     methods:{
@@ -181,19 +180,23 @@ export default {
             this.protocolo = window.location.protocol
         },
 
-        getMacAdress(){
+        statusBatteria(){
             if(process.server) {return;}
-            console.log(this.x)
+            navigator.getBattery().then(function(battery) {
+                console.log(battery.level);
+                // ... and any subsequent updates.
+                battery.onlevelchange = function() {
+                    console.log(this.level);
+                };
+            });
         }
-
-
     },
 
     created(){
-        this.getMacAdress()
         this.getInfo()
         this.getLocation()
         this.getInfoUrl()
+        this.statusBatteria()
     }
 };
 </script>
