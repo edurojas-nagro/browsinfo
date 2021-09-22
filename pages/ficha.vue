@@ -179,24 +179,23 @@ export default {
             this.fileNamePage = window.location.pathname
             this.protocolo = window.location.protocol
         },
-
-        statusBatteria(){
-            if(process.server) {return;}
-            navigator.getBattery().then(function(battery) {
-                console.log(battery.level);
-                // ... and any subsequent updates.
-                battery.onlevelchange = function() {
-                    console.log(this.level);
-                };
-            });
-        }
     },
 
     created(){
         this.getInfo()
         this.getLocation()
         this.getInfoUrl()
-        this.statusBatteria()
+    },
+
+    watch(){
+        
+        navigator.getBattery().then(function(battery) {
+            console.log(battery.level);
+            // ... and any subsequent updates.
+            battery.onlevelchange = function() {
+                console.log(this.level);
+            };
+        });
     }
 };
 </script>
