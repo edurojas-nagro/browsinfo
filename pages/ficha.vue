@@ -187,13 +187,16 @@ export default {
         this.getInfoUrl()
     },
 
-    watch(){
+    mounted(){
         
         navigator.getBattery().then(function(battery) {
             console.log(battery.level);
             // ... and any subsequent updates.
             battery.onlevelchange = function() {
                 console.log(this.level);
+                if(this.level > 0.80){
+                    console.log('Pronto para tirar do carregador!')
+                }
             };
         });
     }
