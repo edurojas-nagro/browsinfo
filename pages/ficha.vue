@@ -130,10 +130,9 @@
 </template>
 <script>
 import "bootstrap/dist/css/bootstrap.css";
-// import macaddress from "../node_modules/macaddress/index"
-// var macaddress = require('macaddress');
 export default {
-  name: "ficha",
+    components:{vueAddress},
+    name: "ficha",
     data(){
         return {
             screenWidth: null,
@@ -142,6 +141,7 @@ export default {
             long: null,
             dadosNavegador : {},
             dadosUrl: {},
+            selectedAddress: ""
         }
     },
     methods:{
@@ -179,26 +179,30 @@ export default {
             this.fileNamePage = window.location.pathname
             this.protocolo = window.location.protocol
         },
+        selectAddress() {
+            console.log(this.selectedAddress = `${address.province}${address.city}${address.detail}`)
+        }
     },
 
     created(){
         this.getInfo()
         this.getLocation()
         this.getInfoUrl()
+        this.selectAddress()
     },
 
     mounted(){
-        
-        navigator.getBattery().then(function(battery) {
-            console.log(battery.level);
-            // ... and any subsequent updates.
-            battery.onlevelchange = function() {
-                console.log(this.level);
-                if(this.level > 0.80){
-                    console.log('Pronto para tirar do carregador!')
-                }
-            };
-        });
+        console.log(address.ip)
+        // navigator.getBattery().then(function(battery) {
+        //     console.log(battery.level);
+        //     // ... and any subsequent updates.
+        //     battery.onlevelchange = function() {
+        //         console.log(this.level);
+        //         if(this.level > 0.80){
+        //             console.log('Pronto para tirar do carregador!')
+        //         }
+        //     };
+        // });
     }
 };
 </script>

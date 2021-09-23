@@ -6,6 +6,7 @@
                 <b>Dominio: </b>{{dados.pageURL}} <br>
                 <b>File: </b>{{dados.pathname}} <br>
                 <b>Protocolo: </b>{{dados.protocolo}} <br>
+                <b>Port: </b>{{dados.porta}} <br>
             </p>
         </div>
     </div>
@@ -26,7 +27,7 @@ export default {
             this.dados.hostName = location.hostname
             this.dados.pathname = location.pathname
             this.dados.protocolo = location.protocol
-            
+            this.dados.porta = location.port
         }
         
     },

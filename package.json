@@ -7,10 +7,13 @@
     "start": "nuxt start"
   },
   "dependencies": {
+    "address": "^1.1.2",
     "bootstrap": "^5.1.1",
     "child_process": "^1.0.2",
+    "fs": "0.0.1-security",
     "jquery": "^3.6.0",
     "macaddress": "^0.5.2",
-    "nuxt": "^2.15.8"
+    "nuxt": "^2.15.8",
+    "vue-address": "^1.4.0"
   }
 }

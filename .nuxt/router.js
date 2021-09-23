@@ -7,6 +7,7 @@ import scrollBehavior from './router.scrollBehavior.js'
 const _0dfd2132 = () => interopDefault(import('..\\pages\\dadosLocation.vue' /* webpackChunkName: "pages/dadosLocation" */))
 const _2de97b1e = () => interopDefault(import('..\\pages\\dadosScreen.vue' /* webpackChunkName: "pages/dadosScreen" */))
 const _02e82340 = () => interopDefault(import('..\\pages\\ficha.vue' /* webpackChunkName: "pages/ficha" */))
+const _8069cee8 = () => interopDefault(import('..\\pages\\macAdress.vue' /* webpackChunkName: "pages/macAdress" */))
 const _186a2c8e = () => interopDefault(import('..\\pages\\index.vue' /* webpackChunkName: "pages/index" */))
 
 const emptyFn = () => {}
@@ -32,6 +33,10 @@ export const routerOptions = {
     path: "/ficha",
     component: _02e82340,
     name: "ficha"
+  }, {
+    path: "/macAdress",
+    component: _8069cee8,
+    name: "macAdress"
   }, {
     path: "/",
     component: _186a2c8e,

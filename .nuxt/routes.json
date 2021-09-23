@@ -3,24 +3,35 @@
     "name": "dadosLocation",
     "path": "/dadosLocation",
     "component": "C:\\\\Users\\\\Eduardo Rojas\\\\Desktop\\\\Projetos\\\\browsinfo\\\\pages\\\\dadosLocation.vue",
-    "chunkName": "pages/dadosLocation"
+    "chunkName": "pages/dadosLocation",
+    "_name": "_0dfd2132"
   },
   {
     "name": "dadosScreen",
     "path": "/dadosScreen",
     "component": "C:\\\\Users\\\\Eduardo Rojas\\\\Desktop\\\\Projetos\\\\browsinfo\\\\pages\\\\dadosScreen.vue",
-    "chunkName": "pages/dadosScreen"
+    "chunkName": "pages/dadosScreen",
+    "_name": "_2de97b1e"
   },
   {
     "name": "ficha",
     "path": "/ficha",
     "component": "C:\\\\Users\\\\Eduardo Rojas\\\\Desktop\\\\Projetos\\\\browsinfo\\\\pages\\\\ficha.vue",
-    "chunkName": "pages/ficha"
+    "chunkName": "pages/ficha",
+    "_name": "_02e82340"
+  },
+  {
+    "name": "macAdress",
+    "path": "/macAdress",
+    "component": "C:\\\\Users\\\\Eduardo Rojas\\\\Desktop\\\\Projetos\\\\browsinfo\\\\pages\\\\macAdress.vue",
+    "chunkName": "pages/macAdress",
+    "_name": "_8069cee8"
   },
   {
     "name": "index",
     "path": "/",
     "component": "C:\\\\Users\\\\Eduardo Rojas\\\\Desktop\\\\Projetos\\\\browsinfo\\\\pages\\\\index.vue",
-    "chunkName": "pages/index"
+    "chunkName": "pages/index",
+    "_name": "_186a2c8e"
   }
 ]
